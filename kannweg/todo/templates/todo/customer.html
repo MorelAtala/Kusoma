@@ -1,0 +1,36 @@
+{%  extends 'todo/main.html' %}
+
+{% block content %}
+
+	<br>
+
+<div class="row">
+	
+	</div>
+
+	<div class="col s6">
+		<div class="card teal accent-4">
+			<h5>Contact Information</h5>
+			<hr>
+			<p>Email: {{customer.email}}</p>
+			<p>Phone: {{customer.phone}}</p>
+		</div>
+	</div>
+
+	<div class="col s6">
+		<div class="card teal accent-3">
+			<h5>Total Orders</h5>
+			<hr>
+			<h1 style="text-align: center;padding: 10px">{{order_count}}</h1>
+		</div>
+	</div>
+</div>
+
+
+<br>
+
+<br>
+
+
+
+{% endblock %}

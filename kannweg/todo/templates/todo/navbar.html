@@ -1,0 +1,22 @@
+{% load static %}
+
+
+
+<nav class="nav-extended">
+    <div class="nav-wrapper indigo">
+      <a href="{% url 'home' %}" class="brand-logo"><i class="material-icons">local_library</i>Kusoma</a>
+      <a href="{% url 'home' %}" data-target="mobile-links" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="{% url 'home' %}">Dashboard</a></li>
+        <li><a href="{% url 'products' %}">Products</a></li>
+       
+      </ul>
+    </div>
+    
+  </nav>
+
+  <ul class="sidenav" id="mobile-links">
+    <li><a href="{% url 'home' %}">Dashboard</a></li>
+    <li><a href="{% url 'products' %}">Products</a></li>
+  </ul>
+
