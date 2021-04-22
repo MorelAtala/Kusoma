@@ -26,7 +26,34 @@
 	</div>
 </div>
 
+<div class="row">
+	<div class="col s12">
+		<div class="card ">
+			<table class="table responsive-table">
+				<tr>
+					<th>Product</th>
+					<th>Category</th>
+					<th>Date Ordered</th>
+					<th>Status</th>
+					<th>Update</th>
+					
+				</tr>
 
+				{% for order in orders %}
+
+				<tr>
+					<td>{{order.product}}</td>
+					<td>{{order.product.category}}</td>
+					<td>{{order.date_created}}</td>
+					<td>{{order.status}}</td>
+					<td><a class="btn " href="{% url 'delete_order' order.id %}">Delete</a></td>
+				</tr>
+				{% endfor %}
+
+			</table>
+		</div>
+	</div>
+</div>
 <br>
 
 <br>
