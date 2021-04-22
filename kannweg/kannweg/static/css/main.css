@@ -1,0 +1,37 @@
+<style>
+		
+		#logo{
+		}
+
+		body{
+			background-color: #ebeff5;
+		}
+
+
+		#total-orders{
+			background-color: #4cb4c7;
+		}
+
+
+		#orders-delivered{
+			background-color: #7abecc;
+		}
+
+		#orders-pending{
+			background-color: #7CD1C0;
+		}
+
+
+		body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+  main {
+    flex: 1 0 auto;
+  }
+      
+
+	
+	</style>
