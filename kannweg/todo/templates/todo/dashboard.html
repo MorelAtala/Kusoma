@@ -80,7 +80,7 @@
 				{% for order in orders %}
 					<tr>
 						<td>{{order.product}}</td>
-						<td>{{order.description}}</td>
+						<td>{{order.product.description}}</td>
 						<td>{{order.date_created}}</td>
 						<td>{{order.status}}</td>
 						<td><a class="btn btn-sm btn-danger" href="{% url 'delete_order' order.id %}">Delete</a></td>
