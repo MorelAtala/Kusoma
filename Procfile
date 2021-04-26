@@ -1,0 +1,1 @@
+web: gunicorn kannweg.wsgi --log-file -
